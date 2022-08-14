@@ -57,7 +57,7 @@ outputFileName = "map%02d-%02d%02d%02d-%02d%02d" % (zoom, now.year % 100, now.mo
 outputFileNamePng = "gen/" + outputFileName + ".png"
 resultImage.save(outputFileNamePng)
 os.system("mkdir gen/{}".format(outputFileName))
-os.system("convert {} -crop 5x4+100+100@  +repage  +adjoin  gen/{}/map_%d.png".format(outputFileNamePng, outputFileName))
+os.system("convert {} -crop 3x2@  +repage  +adjoin  gen/{}/map_%d.png".format(outputFileNamePng, outputFileName))
 os.system("convert gen/{}/*.png gen/{}.pdf".format(outputFileName, outputFileName))
 
 os.system("tar -czvf gen/{}.tar.gz gen/{}".format(outputFileName, outputFileName))
