@@ -1,9 +1,9 @@
-#!python3
+#!/usr/bin/env python3
 
 import io, datetime, time, re, random, requests, math, os
 from PIL import Image, ImageDraw
 
-(zoom, ymin, xmin, ymax, xmax) = (14, 18.039551,49.197634,18.176880,49.268925)
+(zoom, ymin, xmin, ymax, xmax) = (15, 17.199612,49.080556,17.314281,49.133655)
 #layers = ["http://{abc}.tile.openstreetmap.fr/osmfr/!z/!x/!y.png"]
 layers = ["https://mapserver.mapy.cz/turist-m/!z-!x-!y"]
 # formula from https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
